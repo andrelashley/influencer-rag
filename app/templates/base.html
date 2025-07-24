@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    {% if title %}
+    <head>{{ title }} - InfluencerRAG</head>
+    {% else %}
+    <head>Welcome to InfluencerRAG</head>
+    {% endif %}
+    <body>
+        <div>Influencer RAG: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
