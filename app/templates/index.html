@@ -1,8 +1,0 @@
-{% extends "base.html" %} 
-
-{% block content %}
-    <h1>Hello, {{ user.username }}!</h1>
-    {% for pdf in pdfs %}
-    <div><p>{{ pdf.owner.username }} - <b>{{ pdf.title }}</b></p></div>
-    {% endfor %}
-{% endblock %}
